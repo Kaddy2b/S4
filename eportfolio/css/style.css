@@ -1,0 +1,52 @@
+.page {
+	width: 100%;
+	height: 100vh;
+	padding-top: 52px;
+	text-align: justify;
+}
+
+.page > h1 {
+	margin-bottom: 20px;
+}
+
+.page >.container {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#page1 {
+	background-color: #bdc3c7;
+}
+#page2 {
+	background-color: #34495e;
+	color: white;
+}
+#page3 {
+	background-color: #bdc3c7;
+}
+#page4 {
+	background-color: #34495e;
+	color: white;
+}
+#page5 {
+	background-color: #bdc3c7;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.photoDeProfil {
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	border: 1px black solid;
+}

@@ -22,5 +22,28 @@ function MAJ_Table() {
 	}
 
 	var lala = document.getElementById("affichage");
-	lala.innerHTML = aff;	
+	lala.innerHTML = aff;
 }
+
+function demarrer () {
+	chargerSelecteur();
+	MAJ_Table();
+}
+
+//VARIABLES
+var b = document.body;
+var selecteur = document.getElementById("base");
+var active = document.getElementById('activateur');
+var desactive = document.getElementById('desactivateur');
+
+//ACTIONS
+b.onload = demarrer;
+
+selecteur.addEventListener('change', MAJ_Table);
+
+active.addEventListener('click', function(){
+	selecteur.addEventListener('change', MAJ_Table);
+});
+desactive.addEventListener('click', function(){
+	selecteur.removeEventListener('change', MAJ_Table);
+});

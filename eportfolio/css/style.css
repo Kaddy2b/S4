@@ -50,3 +50,7 @@ header {
 	border-radius: 200px;
 	border: 1px black solid;
 }
+
+.row {
+	margin: auto;
+}

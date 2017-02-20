@@ -1,8 +1,9 @@
-img {
-	max-width: 300px;
-	max-height: 300px;
-}
-
 body {
 	background-color: grey;
+	margin: auto;
+}
+
+img {
+	opacity: 0.2;
+	padding-left: 50px;
 }

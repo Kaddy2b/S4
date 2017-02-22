@@ -66,21 +66,59 @@ p {
 	margin-bottom: 20px;
 }
 
-h1 {
+#page5 > .container > h1 {
 	font-size: 200px;
 	color: white;
 	/*visibility: hidden;*/
+}
+
+h1 {
+	font-size: 98px;
 }
 
 h2 {
 	font-size: 54px;
 }
 
-/*#page5 > .container > h1 {
-	padding-bottom: 15px;
-	border-bottom: 10px black dashed;
-}*/
-
 input {
 	margin-bottom: 10px;
+}
+
+.flecheBas {
+	transform: scaleY(-1);
+	max-height: 50px;
+	max-width: 50px;
+	border-radius: 200px;
+	background-color: transparent;
+	transition: background 0.5s;
+}
+
+.flecheBas:hover {
+	background-color: white;
+	transition: background 0.5s;
+}
+
+#imgRea {
+	max-height: 700px;
+}
+
+.container {
+	width: auto;
+	height: auto;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.CV {
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.CV:hover {
+	color: white;
+	text-decoration: none;
 }

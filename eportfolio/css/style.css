@@ -15,7 +15,9 @@
 }
 
 #page1 {
-	background-color: #bdc3c7;
+	/*background-color: #bdc3c7;*/
+	background-image: url("../files/images/O7MF5N0.jpg");
+	background-size: cover;
 }
 #page2 {
 	background-color: #34495e;
@@ -29,7 +31,7 @@
 	color: white;
 }
 #page5 {
-	background-color: #bdc3c7;
+	background-color: #1abc9c;
 }
 
 header {
@@ -51,6 +53,34 @@ header {
 	border: 1px black solid;
 }
 
+.cover {
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 25px;
+}
+
+p {
+	font-size: 18px;
+}
+
 .row {
-	margin: auto;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 200px;
+	color: white;
+	/*visibility: hidden;*/
+}
+
+h2 {
+	font-size: 54px;
+}
+
+/*#page5 > .container > h1 {
+	padding-bottom: 15px;
+	border-bottom: 10px black dashed;
+}*/
+
+input {
+	margin-bottom: 10px;
 }

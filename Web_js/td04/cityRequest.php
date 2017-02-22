@@ -3,7 +3,7 @@
 class Conf {
     
     private static $database = array(
-        'hostname' => 'infolimon.iutmontp.univ-montp2.fr',
+        'hostname' => 'infolimon',
         'database' => 'etugagne',
         'login'    => 'etugagne',
         'password' => '123'

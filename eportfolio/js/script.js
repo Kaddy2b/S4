@@ -1,4 +1,4 @@
-function afficherPRea(id) {
+function afficherRea(id) {
 	var pRea = document.getElementById('pRea');
 	var imgRea =document.getElementById('imgRea');
 
@@ -13,5 +13,5 @@ function afficherPRea(id) {
 }
 
 function init() {
-	afficherPRea(1);
+	afficherRea(1);
 }

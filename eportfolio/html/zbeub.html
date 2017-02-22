@@ -2,8 +2,21 @@
 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ13JA_MOuthIR1P68CKSFFRo&key=AIzaSyD-91xNRtIqSgzh3RGSlLLeNpNWoMFGlwk" allowfullscreen></iframe>
 
 <!-- bouton de téléchargement de mon CV -->
-<button><a href="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">Telecharger mon CV</a></button>
+<a class="CV btn btn-success btn-lg" href="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">Télécharger mon CV</a>
 
-<form action="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">
-    <input type="submit" value="LALA" />
-</form>
+<!-- page2 -->
+<h1>Mes réalisations</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<button type="button" class="btn btn-primary btn-lg" onclick="afficherRea(1);"">Smart Portail</button><br><br>
+			<button type="button" class="btn btn-primary btn-lg" onclick="afficherRea(2);"">Site Web</button>
+		</div>
+		<div class="col-md-5">
+			<p id="pRea"></p>
+		</div>
+		<div class="col-md-5">
+			<img id="imgRea" src="" alt="image">
+		</div>
+	</div>
+</div>

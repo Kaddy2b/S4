@@ -74,3 +74,6 @@ class Model {
 Model::init_pdo();
 
 // le reste est à compléter
+$n = $_GET['city'];
+$r = Model::selectByName($n);
+echo json_encode($r);

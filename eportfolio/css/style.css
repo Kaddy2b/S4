@@ -1,39 +1,60 @@
+/***** GENERAL *****/
+/*** BALISES ***/
+p {
+	font-size: 18px;
+}
+h1 {
+	font-size: 98px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 54px;
+}
+input {
+	margin-bottom: 10px;
+}
+
+/*** class ***/
 .page {
 	width: 100%;
 	height: 100vh;
 	padding-top: 52px;
 	text-align: justify;
+	overflow: auto;
 }
-
-.page > h1 {
-	margin-bottom: 20px;
-}
-
 .page >.container {
 	margin-left: 100px;
 	margin-right: 100px;
 }
-
-#page1 {
-	/*background-color: #bdc3c7;*/
-	background-image: url("../files/images/O7MF5N0.jpg");
-	background-size: cover;
-}
-#page2 {
-	background-color: #34495e;
-	color: white;
-}
-#page3 {
-	background-color: #bdc3c7;
-}
-#page4 {
-	background-color: #34495e;
-	color: white;
-}
-#page5 {
-	background-color: #1abc9c;
+.container {
+	width: auto;
+	height: auto;
 }
 
+/*** UTILES ***/
+.space-between { /* Espace les items. */
+	display: flex;
+	justify-content: space-between;
+}
+.cover { /* Background blanc pour le texte. */
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 25px;
+}
+.border {
+	border: 1px black dashed;
+	min-height: 50px;
+}
+.align-middle {
+	vertical-align: middle;
+}
+.bottom-20 {
+	margin-bottom: 20px;
+}
+.top-100 {
+	margin-top: 100px;
+}
+
+/*** HEADER ***/
 header {
 	position: fixed;
 	top: 0;
@@ -46,44 +67,19 @@ header {
 	border-radius: 0;
 }
 
+/***** PAGES *****/
+/* PAGE 1 */
+#page1 {
+	/*background-color: #bdc3c7;*/
+	background-image: url("../files/images/O7MF5N0.jpg");
+	background-size: cover;
+}
 .photoDeProfil {
 	width: 300px;
 	height: 300px;
 	border-radius: 200px;
 	border: 1px black solid;
 }
-
-.cover {
-	background-color: rgba(255,255,255,0.6);
-	border-radius: 25px;
-}
-
-p {
-	font-size: 18px;
-}
-
-.row {
-	margin-bottom: 20px;
-}
-
-#page5 > .container > h1 {
-	font-size: 200px;
-	color: white;
-	/*visibility: hidden;*/
-}
-
-h1 {
-	font-size: 98px;
-}
-
-h2 {
-	font-size: 54px;
-}
-
-input {
-	margin-bottom: 10px;
-}
-
 .flecheBas {
 	transform: scaleY(-1);
 	max-height: 50px;
@@ -92,33 +88,76 @@ input {
 	background-color: transparent;
 	transition: background 0.5s;
 }
-
 .flecheBas:hover {
 	background-color: white;
 	transition: background 0.5s;
 }
-
-#imgRea {
-	max-height: 700px;
-}
-
-.container {
-	width: auto;
-	height: auto;
-}
-
-.space-between {
-	display: flex;
-	justify-content: space-between;
-}
-
 .CV {
 	color: white;
 	text-decoration: none;
 	vertical-align: middle;
 }
-
 .CV:hover {
 	color: white;
 	text-decoration: none;
+}
+
+/* PAGE 2 */
+#page2 {
+	background-color: #34495e;
+	color: white;
+}
+.imgRealisation {
+	height: 300px;
+	width: 300px;
+	opacity: 0.8;
+	cursor:  pointer;
+}
+.imgRealisation:hover {
+	opacity: 1.0;
+}
+#page2 > .container > .row > div {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#alert {
+	position: absolute;
+  	bottom: 30vh;
+  	min-height: 300px;
+  	display: none;
+}
+.relative {
+	position: relative; /* on positionne le conteneur */
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 500px;
+  	text-align: left;
+}
+#close-alert {
+	color: red;
+	line-height: 20px;
+	cursor:  pointer;
+	background-color: white;
+	border-radius: 75px;
+	border: 1px red solid;
+}
+
+/* PAGE 3 */
+#page3 {
+	background-color: #bdc3c7;
+}
+
+/* PAGE 4 */
+#page4 {
+	background-color: #34495e;
+	color: white;
+}
+
+/* PAGE 5 */
+#page5 {
+	background-color: #1abc9c;
+}
+#page5 > .container > h1 {
+	font-size: 200px;
+	color: white;
 }

@@ -5,10 +5,8 @@
 	<title>Gabriel</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<script type="text/javascript" src="../js/script.js"></script>
-	<script type="text/javascript" src="../js/smoothScroll.js"></script>
 </head>
-<body onload="init();">
+<body>
 	<header id="Header">
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
@@ -22,36 +20,49 @@
 	</header>
 	<main>
 		<div class="page" id="page1">
-		<br><br><br><br>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5 text-center">
+			<div class="container top-100">
+				<div class="row col-md-5">
+					<div class="col-md-12 text-center bottom-20">
 						<img class="photoDeProfil" src="../files/images/kaddy.jpg" alt="photo de profil">
 					</div>
-				</div>
-				<!-- .row $1 -->
-				<div class="row">
-					<div class="col-md-5 cover">
+					<div class="col-md-12 cover bottom-20">
 						<h3>Qui suis-je ?</h3>
 						<p>Je m'appelle Gabriel Gracia et je suis Etudiant en Informatique à l'IUT de Montpellier, 
 						j'ai développé des compétences dans des domaines variés, aussi bien en Web qu'en programmation logiciel
 						mais je suis aussi tres intéressé par le management et le travail en équipe. L'informatique me plais et 
 						j'aime innover, découvrir de nouvelles choses et les partager.</p>
 					</div>
-				</div>
-				<!-- row $2 -->
-				<div class="col-md-5 space-between">
-					<a href="#page2"><img class="flecheBas" src="../files/images/fleche.png" alt="fleche"></a>
-					<a class="CV btn btn-success btn-lg" href="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">Télécharger mon CV</a>
+					<div class="col-md-12 space-between">
+						<a href="#page2"><img class="flecheBas" src="../files/images/fleche.png" alt="fleche"></a>
+						<a class="CV btn btn-success btn-lg" href="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">Télécharger mon CV</a>
+					</div>
 				</div>
 			</div>
 			<!-- container -->
 		</div>
 		<!-- /#page1.page -->
 		<div class="page" id="page2">
-			
+			<div class="container">
+				<h1>Mes Réalisations</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img id="imgRea1" class="imgRealisation" src="../files/images/arduino.png" alt="miniature">
+					</div>
+					<div class="col-md-4">
+						<img id="imgRea2" class="imgRealisation" src="../files/images/screen-ecole.jpg" alt="miniature">
+					</div>
+				</div>
+			</div>
+			<!-- container -->
 		</div>
 		<!-- /#page2.page -->
+		<div class="relative">
+			<div id="alert" class="alert alert-info">
+				<strong id="close-alert"> X </strong>
+			    <p id="text-alert"></p>
+			</div>
+		</div>
+		<!-- alert -->
 		<div class="page" id="page3">
 			<h1>TITRE DE PAGE</h1>
 			<div class="container">
@@ -94,6 +105,9 @@
 	</main>
 </body>
 <!-- body -->
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/smoothScroll.js"></script>
 <script type="text/javascript">
     smooth_scroll.init({
         header_id : "Header",

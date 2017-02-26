@@ -32,7 +32,7 @@ var smooth_scroll = (function() {
             clearInterval(intervalId);
         }
 
-        destinationY = el.offsetTop /*- header_height*/;
+        destinationY = el.offsetTop + header_height;
         currentY = window.scrollY;
 
         intervalId = setInterval(smoothScroll.bind(el), 20);
@@ -50,7 +50,6 @@ var smooth_scroll = (function() {
         element_id = anchor_href.slice(1, anchor_href.length);
         var el = document.getElementById(element_id);
         scrollTo(el);
-
     };
 
     var init = function(config) {

@@ -1,1 +1,148 @@
-/home/kaddy/Bureau/S4/eportfolio/html/index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Gabriel</title>
+	<link rel="icon" type="image/png" href="files/images/logo.png" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/timeline.css">
+</head>
+<body>
+	<header id="Header">
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li class="item1"><a href="#page1">Gabriel</a></li>
+				<li class="item2"><a href="#page2">Mes réalisations</a></li>
+				<li class="item3"><a href="#page3">Ma Formation</a></li>
+				<li class="item4"><a href="#page4">Mes Compétences</a></li>
+				<li class="item5"><a href="#page5">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="page" id="page1">
+			<div class="container top-100">
+				<div class="row col-md-5">
+					<div class="col-md-12 text-center bottom-20">
+						<!-- <img class="photoDeProfil" src="../files/images/kaddy.jpg" alt="photo de profil"> -->
+						<img class="photoDeProfil" src="https://drive.google.com/uc?id=0BzVj1iG4UIDYVGtnRnVBRmJiaWM" alt="photo de profil">
+					</div>
+					<div class="col-md-12 cover bottom-20">
+						<h3>Qui suis-je ?</h3>
+						<p>Je m'appelle Gabriel Gracia et je suis Etudiant en Informatique à l'IUT de Montpellier, 
+						j'ai développé des compétences dans des domaines variés, aussi bien en Web qu'en programmation logiciel
+						mais je suis aussi tres intéressé par le management et le travail en équipe. L'informatique me plais et 
+						j'aime innover, découvrir de nouvelles choses et les partager.</p>
+					</div>
+					<div class="col-md-12 space-between">
+						<a href="#page2"><img class="flecheBas" src="files/images/fleche.png" alt="fleche"></a>
+						<a class="CV btn btn-success btn-lg" href="https://drive.google.com/uc?export=download&id=0BzVj1iG4UIDYMGItMFlHdE9BM2s">Télécharger mon CV</a>
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /#page1.page -->
+		<div class="page" id="page2">
+			<div class="container">
+				<h1 class="page-header">Mes Réalisations</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img id="imgRea1" class="imgRealisation" src="files/images/arduino.png" alt="miniature">
+					</div>
+					<div class="col-md-4">
+						<img id="imgRea2" class="imgRealisation" src="files/images/screen-ecole.jpg" alt="miniature">
+					</div>
+					<div class="col-md-4">
+						<img id="imgRea3" class="imgRealisation" src="files/images/portfolio.jpg" alt="miniature">
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /#page2.page -->
+		<div class="relative">
+			<div id="alert" class="alert alert-info">
+				<strong id="close-alert"> X </strong>
+			    <p id="text-alert" class="text-justify text-muted"></p>
+			</div>
+		</div>
+		<!-- alert -->
+		<div class="page" id="page3">
+			<div class="container">
+				<h1 class="page-header">Ma Formation</h1>
+				<ul class="timeline">
+					<li class="timeline-inverted">
+				      	<div class="timeline-badge info"></div>
+				     	<div class="timeline-panel">
+				        	<div class="timeline-heading">
+				          		<h4 class="timeline-title">IAE</h4>
+				          		<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2018-2021</small></p>
+				        	</div>
+				        	<div class="timeline-body">
+				          		<p>J'envisage de poursuivre mes études à l'IAE de Montpellier.</p>
+				        	</div>
+				      	</div>
+				    </li>
+				    <li>
+				     	<div class="timeline-badge danger"></div>
+					    <div class="timeline-panel">
+					        <div class="timeline-heading">
+					          	<h4 class="timeline-title">DUT Informatique</h4>
+					          	<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015-2017</small></p>
+					        </div>
+					        <div class="timeline-body">
+						        <p>J'ai réalisé un DUT informatique à l'IUT de Montpellier pour apprendre l'algorithmique, le développement
+						        logiciel, le Web mais aussi la gestion des réseaux, l'administration des bases de données & la conception. J'ai pu également m'initier aux interfaces homme-machine, à la gestion d'entreprise, au travail en groupes, aux méthodes Agiles, et meme à la comptabilité.</p>
+					        </div>
+				      	</div>
+				    </li>
+				    <li class="timeline-inverted">
+				      	<div class="timeline-badge success"></div>
+				     	<div class="timeline-panel">
+				        	<div class="timeline-heading">
+				          		<h4 class="timeline-title">BAC STI2D</h4>
+				          		<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2014-2015 </small></p>
+				        	</div>
+				        	<div class="timeline-body">
+				          		<p>RAS</p>
+				        	</div>
+				      	</div>
+				    </li>
+				</ul>
+			</div>
+		</div>
+		<!-- /#page3.page -->
+		<div class="page" id="page4">
+			<div class="container">
+				<h1>Mes Compétences</h1>
+			</div>
+		</div>
+		<!-- /#page4.page -->
+		<div class="page" id="page5">
+			<div class="container">
+				<h1>CONTACT</h1>
+				<h2>////////////////////////////////////////////////////////////////</h2>
+				<div class="container auto">
+					<form method="post" action="#">
+						<input class="form-control" placeholder="Nom" type="text">
+						<input class="form-control" placeholder="Email" type="text">
+						<input class="form-control" placeholder="Sujet" type="text">
+						<textarea class="form-control" placeholder="Message" type="text"></textarea>
+					</form>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /#page5.page -->
+	</main>
+</body>
+<!-- body -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="js/smoothScroll.js"></script>
+<script type="text/javascript">smooth_scroll.init({});</script>
+<!-- script -->
+</html>

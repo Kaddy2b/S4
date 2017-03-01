@@ -21,10 +21,10 @@ var text = document.getElementById('text-alert');
 /***** ACTIONS *****/
 //imgRea1
 imgRea1.onmouseover = function(){
-	imgRea1.src = "../files/images/Arduino_Uno.jpg";
+	imgRea1.src = "files/images/Arduino_Uno.jpg";
 };
 imgRea1.onmouseout = function(){
-	imgRea1.src = "../files/images/arduino.png";
+	imgRea1.src = "files/images/arduino.png";
 };
 imgRea1.onclick = function(){
 	myAlert(strRea1);

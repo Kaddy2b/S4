@@ -10,15 +10,15 @@
 <body>
 	<main>
 		<div id="playlist">
-			<label for="selecteur" class="form-control">Choix de la Musique</label>
-			<select id="selecteur" class=form-control>
+			<label for="selecteur" class="form-control text-center">Choix de la Musique</label>
+			<select id="selecteur" class=form-control onchange="choisir();">
 				<option value="./sons/Parasyte_-_Next_to_You">Parasyte - Next to You</option>
 				<option value="./sons/mort_aux_taches">mort aux tâches !</option>
 			</select>
-			<input type="submit" value="Choisir" onclick="lectureSon();">
-			<input type="submit" value="Pause" onclick="paused();">
-			<input type="submit" value="Stop" onclick="stop();">
+			<input type="submit" value="Play" class="btn btn-success" id="pause" onclick="paused();">
+			<input type="submit" value="Stop" class="btn btn-danger" onclick="stop();">
 		</div>
+		<!-- playlist -->
 		<div class="container" id="subMain">
 			<div class="row flex-center" id="GamePad">
 				<div id="touche1" class="touches col-md-1"><!-- A --></div>
@@ -32,11 +32,12 @@
 				<!-- Touches -->
 			</div>
 		</div>
-		<!-- <embed id="lecteur" src="" width=300 height=50 autostart="true"> -->
+		<!-- subMain -->
 		<audio id="audioPlayer">
 			<source id="sourcePlayerOGG" src="./sons/Parasyte_-_Next_to_You.ogg">
 		    <source id="sourcePlayerMP3" src="./sons/Parasyte_-_Next_to_You.mp3">
 		</audio>
+		<!-- audio -->
 	</main>
 </body>
 <script type="text/javascript" src="./js/script.js"></script>

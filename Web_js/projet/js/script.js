@@ -1,28 +1,46 @@
-//var selecteur = document.getElementById('selecteur');
+function choisir() {
+	stop();
 
-function lectureSon() {
+	//Selectionner la musique
 	var selecteur = document.getElementById('selecteur');
 	var choix = selecteur.selectedIndex;
 	var son = selecteur.options[choix].value;
 
+	//AudioPlayer
 	var audioPlayer = document.getElementById('audioPlayer');
-	var sourcePlayerOGG = document.getElementById('sourcePlayerOGG');
-	var sourcePlayerMP3 = document.getElementById('sourcePlayerMP3');
-	sourcePlayerOGG.src = son + ".ogg";
-	sourcePlayerMP3.src = son + ".mp3";
 
-	audioPlayer.play();
+	//Définir la musique à jouer
+	if(audioPlayer.canPlayType('audioPlayer/ogg')) {
+		audioPlayer.setAttribute("src", son + ".ogg");
+	}
+	else {
+		audioPlayer.setAttribute("src", son + ".mp3");
+	}
 }
 
 function paused() {
 	var audioPlayer = document.getElementById('audioPlayer');
-	audioPlayer.pause();
+
+	//Bouton Pause
+	var button = document.getElementById('pause');
+	if (button.value == "Play") {
+		button.value = "Pause";
+		audioPlayer.play();
+	}
+	else {
+		button.value = "Play";
+		audioPlayer.pause();
+	}
 }
 
 function stop() {
 	var audioPlayer = document.getElementById('audioPlayer');
 	audioPlayer.currentTime = 0;
     audioPlayer.pause();
-}
 
-audioPlayer.play();
+    //Bouton Pause
+    var button = document.getElementById('pause');
+    if (button.value == "Pause") {
+		button.value = "Play";
+	}
+}

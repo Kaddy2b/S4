@@ -1,5 +1,6 @@
 body {
-	background-image: url('../images/bg.gif');
+	/*background-image: url('../images/bg.gif');*/
+	background-image: url('../images/fire.gif');
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
@@ -19,7 +20,8 @@ main #subMain {
 	flex-direction: column;
 	justify-content: flex-end;
 	background-color: black;
-	background-image: url('../images/fire.gif');
+	background-image: url('../images/bg.gif');
+	/*background-image: url('../images/fire.gif');*/
 	background-size: cover;
 	/*background-repeat: no-repeat;*/
 }
@@ -31,6 +33,10 @@ main #subMain {
 
 #playlist {
 	position: absolute;
+}
+
+.btn {
+	min-width: 70px;
 }
 
 /* FLEX */

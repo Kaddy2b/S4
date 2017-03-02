@@ -3,14 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Piano's Heroes</title>
-	<link rel="icon" type="image/png" href="files/images/logo.png" />
+	<link rel="icon" type="image/png" href="./images/logo.png" />
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<main>
+		<div id="playlist">
+			<label for="selecteur" class="form-control">Choix de la Musique</label>
+			<select id="selecteur" class=form-control>
+				<option value="./sons/Parasyte_-_Next_to_You">Parasyte - Next to You</option>
+				<option value="./sons/mort_aux_taches">mort aux tâches !</option>
+			</select>
+			<input type="submit" value="Choisir" onclick="lectureSon();">
+			<input type="submit" value="Pause" onclick="paused();">
+			<input type="submit" value="Stop" onclick="stop();">
+		</div>
 		<div class="container" id="subMain">
-			<div class="row flex-center piano">
+			<div class="row flex-center" id="GamePad">
 				<div id="touche1" class="touches col-md-1"><!-- A --></div>
 				<div id="touche2" class="touches col-md-1"><!-- Z --></div>
 				<div id="touche3" class="touches col-md-1"><!-- E --></div>
@@ -19,8 +29,14 @@
 				<div id="touche6" class="touches col-md-1"><!-- Y --></div>
 				<div id="touche7" class="touches col-md-1"><!-- U --></div>
 				<div id="touche8" class="touches col-md-1"><!-- I --></div>
+				<!-- Touches -->
 			</div>
 		</div>
+		<!-- <embed id="lecteur" src="" width=300 height=50 autostart="true"> -->
+		<audio id="audioPlayer">
+			<source id="sourcePlayerOGG" src="./sons/Parasyte_-_Next_to_You.ogg">
+		    <source id="sourcePlayerMP3" src="./sons/Parasyte_-_Next_to_You.mp3">
+		</audio>
 	</main>
 </body>
 <script type="text/javascript" src="./js/script.js"></script>

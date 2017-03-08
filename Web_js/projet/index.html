@@ -8,18 +8,34 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<main>
-		<div id="playlist">
-			<label for="selecteur" class="form-control text-center">Choix de la Musique</label>
-			<select id="selecteur" class=form-control onchange="choisir();">
-				<option value="./sons/Parasyte_-_Next_to_You">Parasyte - Next to You</option>
-				<option value="./sons/mort_aux_taches">mort aux tâches !</option>
-			</select>
-			<input type="submit" value="Play" class="btn btn-success" id="pause" onclick="paused();">
+	<div class="pages Home-page" id="title">
+		<div class="container text-center">
+			<div class="page-header">
+				<h1>Piano's Heroes</h1>
+				<h2>So Much Fun</h2>
+			</div>
+			<div class="row menu margin-auto">
+				<div class="col-md-10" id="playlist">
+					<label for="selecteur" class="form-control text-center">Choix de la Musique</label>
+					<select id="selecteur" class=form-control onchange="choisir();">
+						<option value="./sons/Parasyte_-_Next_to_You">Parasyte - Next to You</option>
+						<option value="./sons/mort_aux_taches">mort aux tâches !</option>
+					</select>
+				</div>
+				<!-- playlist -->
+				<div class="col-md-2">
+					<a href="#jeu"><button class="btn btn-play btn-success btn-lg" onclick="jouer(0);">PLAY</button></a>
+				</div>
+				<!-- PLAY -->
+			</div>
+		</div>
+	</div>
+	<div class="pages Game-page" id="jeu">
+		<div class="position-absolute">
+			<input type="submit" value="Pause" class="btn btn-success" id="pause" onclick="paused();">
 			<input type="submit" value="Stop" class="btn btn-danger" onclick="stop();">
 		</div>
-		<!-- playlist -->
-		<div class="container" id="subMain">
+		<div class="container" id="container-GamePad">
 			<div class="row flex-center" id="GamePad">
 				<div id="touche1" class="touches col-md-1"><!-- A --></div>
 				<div id="touche2" class="touches col-md-1"><!-- Z --></div>
@@ -38,7 +54,7 @@
 		    <source id="sourcePlayerMP3" src="./sons/Parasyte_-_Next_to_You.mp3">
 		</audio>
 		<!-- audio -->
-	</main>
+	</div>
 </body>
 <script type="text/javascript" src="./js/script.js"></script>
 <!-- script -->

@@ -43,4 +43,19 @@ function stop() {
     if (button.value == "Pause") {
 		button.value = "Play";
 	}
+	jouer(1);
+}
+
+function jouer(choix) {
+	var title = document.getElementById('title');
+	var jeu = document.getElementById('jeu');
+
+	if (choix == 0) { //acceder au jeu
+		title.style.display = 'none';
+		jeu.style.display = 'inline';
+	}
+	else { //acceder au menu
+		title.style.display = 'inline';
+		jeu.style.display = 'none';
+	};
 }
